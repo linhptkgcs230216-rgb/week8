@@ -12,22 +12,22 @@ require_once __DIR__ . '/auth.php';
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
   <div class="container">
-    <a class="navbar-brand" href="/student_qa/index.php">Student Q&amp;A</a>
+    <a class="navbar-brand" href="/COMP1841/student/index.php">Student Q&amp;A</a>
     <div class="collapse navbar-collapse">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="/student_qa/index.php">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/COMP1841/student/index.php">Home</a></li>
         <?php if (isLoggedIn()): ?>
-          <li class="nav-item"><a class="nav-link" href="/student_qa/post_add.php">New Post</a></li>
+          <li class="nav-item"><a class="nav-link" href="/COMP1841/student/post_add.php">New Post</a></li>
           <?php if (isAdmin()): ?>
-            <li class="nav-item"><a class="nav-link" href="/student_qa/admin/users.php">Manage Users</a></li>
-            <li class="nav-item"><a class="nav-link" href="/student_qa/admin/modules.php">Manage Modules</a></li>
+            <li class="nav-item"><a class="nav-link" href="/COMP1841/student/admin/users.php">Manage Users</a></li>
+            <li class="nav-item"><a class="nav-link" href="/COMP1841/student/admin/modules.php">Manage Modules</a></li>
           <?php endif; ?>
-          <li class="nav-item"><a class="nav-link" href="/student_qa/logout.php">Logout (<?= htmlspecialchars($_SESSION['username']) ?>)</a></li>
+          <li class="nav-item"><a class="nav-link" href="/COMP1841/student/logout.php">Logout (<?= htmlspecialchars($_SESSION['username']) ?>)</a></li>
         <?php else: ?>
-          <li class="nav-item"><a class="nav-link" href="/student_qa/login.php">Login</a></li>
-          <li class="nav-item"><a class="nav-link" href="/student_qa/register.php">Register</a></li>
+          <li class="nav-item"><a class="nav-link" href="/COMP1841/student/login.php">Login</a></li>
+          <li class="nav-item"><a class="nav-link" href="/COMP1841/student/register.php">Register</a></li>
         <?php endif; ?>
-        <li class="nav-item"><a class="nav-link" href="/student_qa/contact.php">Contact Admin</a></li>
+        <li class="nav-item"><a class="nav-link" href="/COMP1841/student/contact.php">Contact Admin</a></li>
       </ul>
     </div>
   </div>
